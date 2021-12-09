@@ -24,6 +24,7 @@
     <ProjectGuid>{a030e5aa-7bc2-48e0-81e8-dad323957fbd}</ProjectGuid>
     <RootNamespace>PrivetMir</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>droch_s_massivom</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Base-C\privetmir.cpp" />
+    <ClCompile Include="..\Base-C\droch_s_massivom.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
