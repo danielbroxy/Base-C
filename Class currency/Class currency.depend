@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1644854828 source:c:\users\79009\onedrive\Документы\github\base-c\class currency\main.cpp
+	<iostream>
+	<iomanip>
+	"currency.h"
+
+1644856753 c:\users\79009\onedrive\Документы\github\base-c\class currency\include\currency.h
+	<iostream>
+	<iomanip>
+
+1644854754 source:c:\users\79009\onedrive\Документы\github\base-c\class currency\src\currency.cpp
+	"currency.h"
+	<iostream>
+	<iomanip>
+
