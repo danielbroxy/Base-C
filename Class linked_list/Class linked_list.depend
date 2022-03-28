@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1648490706 source:c:\users\79009\onedrive\Документы\github\base-c\class linked_list\src\list_elem.cpp
+	"list_elem.h"
+
+1648488059 c:\users\79009\onedrive\Документы\github\base-c\class linked_list\include\list_elem.h
+
+1648489782 source:c:\users\79009\onedrive\Документы\github\base-c\class linked_list\main.cpp
+	<iostream>
+	"linked_list.h"
+	"list_elem.h"
+
+1648490756 c:\users\79009\onedrive\Документы\github\base-c\class linked_list\include\linked_list.h
+	"list_elem.h"
+
+1648490911 source:c:\users\79009\onedrive\Документы\github\base-c\class linked_list\src\linked_list.cpp
+	"linked_list.h"
+	<iostream>
+
