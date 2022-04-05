@@ -116,13 +116,35 @@ void sort(dynamic_array <T> & a)
 template<typename T>
 dynamic_array<T> operator+ (dynamic_array<T> a, dynamic_array<T> b)
 {
-dynamic_array<T> res(a.size() + b.size());
-for (int i = 0; i < a.size(); ++i)
-    res[i] = a[i];
-for (int i = 0; i < b.size(); ++i)
-    res[i + a.size()] = b[i];
-return res;
+    dynamic_array<T> res(a.size() + b.size());
+    for (int i = 0; i < a.size(); ++i)
+        res[i] = a[i];
+    for (int i = 0; i < b.size(); ++i)
+        res[i + a.size()] = b[i];
+    return res;
 }
+
+template <typename T>
+class Stack: public dynamic_array<T>
+{
+    public:
+        void push(T t)
+        {
+            this->push_back(t);
+        }
+        T top ()
+        {
+            return (*this)[this->size() - 1];
+        }
+        void pop()
+        {
+            this->resize(this->size() - 1);
+        }
+        bool empty()
+        {
+            return this->size() == 0;
+        }
+};
 
 int main ()
 {
@@ -145,14 +167,23 @@ int main ()
     cout << c << endl;
     sort(c);
     cout << c << endl;
-dynamic_array<int> d(5);
-for (int i = 0; i < d.size(); ++i)
-    d[i] = i;
-dynamic_array<int> e(3);
-for (int i = 0; i < e.size(); ++i)
-    e[i] = 10 * i;
-cout << d << endl;
-cout << e << endl;
-cout << d + e << endl;
+    dynamic_array<int> d(5);
+    for (int i = 0; i < d.size(); ++i)
+        d[i] = i;
+    dynamic_array<int> e(3);
+    for (int i = 0; i < e.size(); ++i)
+        e[i] = 10 * i;
+    cout << d << endl;
+    cout << e << endl;
+    cout << d + e << endl;
+    Stack<int> S;
+    S.push(1);
+    S.push(2);
+    S.push(3);
+    while (!S.empty())
+    {
+        cout << S.top() << endl;
+        S.pop();
+    }
 }
 
